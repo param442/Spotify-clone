@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify-Search</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="section1">
+        <div id="sub-sec1">
+          <div id="icons">
+            <p><img src="./assets/img/home.svg" id="home" alt="" />HOME</p>
+            <p><img src="./assets/img/search.svg" alt="" />SEARCH</p>
+          </div>
+          <div id="library">
+            <nav id="lib">
+              <h2>Yourlibrary</h2>
+              <span>
+                <i class="fa-solid fa-plus fa-xl"></i>
+                <i class="fa-solid fa-arrow-right fa-xl"></i>
+              </span>
+            </nav>
+            <div id="btn">
+              <h4>Playlist</h4>
+              <h4>Albums</h4>
+            </div>
+            <div id="search">
+              <img src="./assets/img/search.svg" alt="" />
+              <div id="recent">
+                <a href="">recent<i class="fa-solid fa-bars"></i></a>
+              </div>
+            </div>
+            <div id="catagory">
+              <div id="list">
+                <div class="songInfo">
+                  <h3>shubh</h3>
+                  <span
+                    ><img id="img" src="./assets/img/play.svg" alt=""
+                  /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="sub-sec2">
+          <nav id="section-2-nav">
+            <img src="./assets/img/logo.svg" alt="" />
+            <span>
+              <i class="fa-solid fa-angle-up fa-rotate-270 fa-lg"></i
+              ><i class="fa-solid fa-angle-up fa-rotate-90 fa-lg"></i
+            ></span>
+          </nav>
+          <div id="spotifyPlaylist">
+            <h1>Playlist</h1>
+            <div class="cardcontainer">
+              <div class="card">
+                <div class="play">
+                  <img src="./assets/img/play.svg" alt="" />
+                </div>
+                <img src="./assets/img/cover.jpg" alt="" />
+                <h2>Happy Hits</h2>
+                <p>MIx Songs Playlist</p>
+              </div>
+              <div class="card">
+                <div class="play">
+                  <img src="./assets/img/play.svg" alt="" />
+                </div>
+                <img src="./assets/img/cover.jpg" alt="" />
+                <h2>Happy Hits</h2>
+                <p>MIx Songs Playlist</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="section2">
+        <audio
+          id="myAudio"
+          src="./assets/songs/Diljit/music/Daytona - Diljit Dosanjh.mp3"
+          controls
+          controlslist="nodownload"></audio>
+        <i class="fa-solid fa-backward-step" id="playprev"></i>
+        <button id="playButton"><img src="./assets/img/play.svg" /></button>
+        <i class="fa-solid fa-forward-step" id="playnext"></i>
+        <input type="range" id="seekbar" value="0" max="100" />
+        <input type="range" id="volume" avlue="0" max="100" />
+        <i class="fa-solid fa-volume-high"></i>
+        <input type="text" id="timeInput" value="0:00" />
+        <span id="totalDuration">/0:00</span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

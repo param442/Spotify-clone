@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: black;
+  overflow: hidden;
+}
+
+#section1 {
+  height: 85%;
+  width: 100%;
+  background-color: black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#section2 {
+  height: 15%;
+  width: 100%;
+  background-color: #000000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sub-sec1 {
+  min-width: 22%;
+  height: 100%;
+  margin: 20px 10px 0 10px;
+  background-color: #000000;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#sub-sec2 {
+  width: 80%;
+  height: 100%;
+  position: relative;
+  margin-top: 20px;
+  background-color: #121212;
+  border-radius: 10px;
+}
+
+#icons p > img {
+  height: 30px;
+  object-fit: cover;
+  position: relative;
+  cursor: pointer;
+}
+
+#icons {
+  height: 20%;
+  width: 100%;
+  background-color: #121212;
+  border-radius: 10px;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
+#icons p {
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 25px;
+  gap: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#library {
+  height: 80%;
+  width: 100%;
+  background-color: #121212;
+  border-radius: 10px;
+  margin-top: 10px;
+  position: relative;
+}
+
+#lib {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 50px;
+  margin-top: 20px;
+}
+#lib h2 {
+  color: white;
+  cursor: pointer;
+}
+i {
+  color: white;
+}
+#lib > Span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+
+  cursor: pointer;
+}
+#lib span i {
+  padding: 20px 10px;
+  transition: all ease 0.4s;
+  border-radius: 20px;
+}
+#lib span i:hover {
+  padding: 20px 10px;
+  background-color: #292929;
+  border-radius: 20px;
+}
+
+#btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  color: white;
+  gap: 20px;
+}
+
+#btn h4 {
+  padding: 8px 15px;
+  background-color: #232323;
+  border-radius: 25px;
+  position: relative;
+  left: -35px;
+  cursor: pointer;
+}
+
+#search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#search > img {
+  height: 40px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: all ease 0.4s;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#search > img:hover {
+  background-color: #292929;
+}
+
+#search #recent > img {
+  height: 20px;
+  margin-right: 20px;
+}
+
+#recent {
+  display: flex;
+  gap: 5px;
+  color: white;
+  text-transform: capitalize;
+  cursor: pointer;
+  opacity: 0.5;
+  transform: scale(0.9); /* Use transform for scaling */
+  transition: all ease 0.4s;
+  margin-right: 20px;
+}
+
+#recent:hover {
+  opacity: 1;
+  transform: scale(1);
+  color: white;
+}
+
+#recent:hover a {
+  opacity: 1;
+}
+
+#recent a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+#section-2-nav {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+#section-2-nav span {
+  display: flex;
+  gap: 10px;
+  margin-right: 50px;
+}
+#section-2-nav span i {
+  background-color: #000000;
+  padding: 20px 10px;
+  border-radius: 20px;
+}
+#spotifyPlaylist {
+  padding: 15px;
+  overflow: hidden;
+}
+.cardcontainer {
+  display: flex;
+  gap: 3px;
+  flex-wrap: wrap;
+  overflow: scroll;
+  height: 70vh;
+  overflow-x: hidden;
+  width: 100vw;
+}
+.card {
+  background-color: #282828;
+  width: 25%;
+  height: 48vh;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all ease 0.2s;
+  margin-top: 10px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.card:hover {
+  transform: scale(1.05);
+  filter: brightness(1.5);
+}
+.card:hover .play {
+  height: 40px;
+}
+.card:hover .play img {
+  height: 40px;
+}
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 75%;
+}
+.card h2 {
+  padding-left: 10px;
+}
+.card p {
+  padding-left: 10px;
+}
+.card .play {
+  background-color: #1db954;
+  position: absolute;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 19px;
+  transition: all ease 0.2s;
+  height: 0px;
+  bottom: 120px;
+}
+.card .play img {
+  height: 40px;
+  object-fit: cover;
+  transform: scale(0.6);
+  height: 0px;
+}
+#catagory {
+  top: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  color: white;
+  height: 70%;
+  width: 100%;
+}
+#list {
+  position: relative;
+  height: 90%;
+  width: 90%;
+  margin-right: 10px;
+  background-color: #121212;
+  border-radius: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#list::-webkit-scrollbar {
+  width: 5px; /* Changed: Set width for WebKit browsers */
+  height: 10px;
+
+  right: 0; /* Changed: Align to the right inside the #list container */
+}
+
+/* Changed: Added scrollbar thumb styles */
+#list::-webkit-scrollbar-thumb {
+  background-color: #8e8e8e; /* Changed: Thumb color */
+  border-radius: 5px; /* Changed: Round the corners of the thumb */
+}
+
+/* Changed: Added scrollbar track styles */
+#list::-webkit-scrollbar-track {
+  background-color: #121212; /* Changed: Track color */
+}
+#list .songInfo {
+  background-color: black;
+  height: 20%;
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+  padding: 0 15px;
+}
+#timeInput {
+  background: none;
+  font-size: 16px;
+  width: 35px;
+  border: none;
+  position: relative;
+  right: 13px;
+}
+#totalDuration {
+  position: relative;
+  right: 13px;
+}
+#playButton {
+  background: none;
+  border: none;
+}
+#myAudio {
+  display: none;
+}
+#volume {
+  width: 0;
+  margin: 0 10px;
+  opacity: 0;
+  transition: all ease 0.4s;
+  position: relative;
+}
+.fa-volume-high {
+  margin: 0 10px;
+  transition: all ease 0.4s;
+  position: relative;
+  right: 15px;
+}
+#playnext {
+  margin: 0 10px 0 10px;
+}
+#playprev {
+  margin: 0 10px 0 10px;
+}
